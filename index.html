@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-
-  <title>Geek-inventory</title>
-
-  <script type="module">
-    document.documentElement.classList.remove('no-js');
-    document.documentElement.classList.add('js');
-  </script>
-  
-  <!-- Yandex.Metrika counter -->
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <title>Кофевар</title>
+   <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
@@ -25,31 +19,55 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/36521710" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="stylesheet" href="/assets/css/print.css" media="print">
-
-  <meta name="description" content="Page description">
-  <meta property="og:title" content="Geek-inventory">
-  <meta property="og:description" content="Page description">
-  <meta property="og:image" content="https://www.mywebsite.com/image.jpg">
-  <meta property="og:image:alt" content="Image description">
-  <meta property="og:locale" content="en_GB">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:url" content="https://www.mywebsite.com/page">
-  <link rel="canonical" href="https://www.mywebsite.com/page">
-
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/my.webmanifest">
-  <meta name="theme-color" content="#FF00FF">
 </head>
-
 <body>
-  <!-- Content -->
-  Катин сайт для тестирования
-  <script src="/assets/js/script.js" type="module"></script>
+
+<header class="header">
+  <h1>Вари кофе, получай монетки!</h1>
+</header>
+
+<main>
+  <section class="game">
+    <div class="board block">
+    <h2>Кофейня</h2>
+      <div class="panel">
+        <div class="sell-coffee panel"><img src="img/coffeeshop.jpg"></img></div>
+        <div class="to-promote panel"><img src="img/promotion.jpg"></img></div>
+        <div class="buy-coffee-pack panel"><img src="img/buy-coffee.jpg"></img></div>
+        <div class="choose-perk panel"><img src="img/finance.png"></img></div>
+        <div class="statistic-panel">
+          <span>$ -____ </span>
+          <span>:) -____ </span>
+          <span>* -____ </span>
+        </div>        
+      </div>      
+    </div>
+    <div class="shop block">
+      <h2>Улучшения</h2>
+      <button class="shop upgrade sortof">Улучшить сорт кофе. Цена <span></span>$</button>
+      <button class="shop upgrade cup">Новые стаканчики под кофе. Цена <span></span>$</button>
+      <button class="shop upgrade machine">Изменить способ приготовления. Цена <span></span>$</button>
+    </div>
+    <div class="stat block">
+      <div class="money">Кол-во денег: <span></span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer container">
+  <div class="center-wrapper">
+    <section class="footer-logo">
+      Кофевар сделан <a tabindex="1" href="https://github.com/elemmiriel" class="footer-logo-link">Elemmiriel</a> &copy; 2018
+      <p></p>
+      Все иконки отсюда: <a tabindex="1" href="https://icons8.ru" class="footer-logo-link">icons8</a>
+    </section>
+    <nav class="footer-social">
+    </nav>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
+
